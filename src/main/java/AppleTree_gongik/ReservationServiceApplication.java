@@ -1,4 +1,4 @@
-package AppleTree_gongik.reservationService;
+package AppleTree_gongik;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
