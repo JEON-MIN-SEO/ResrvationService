@@ -1,5 +1,6 @@
 package AppleTree_gongik.entity;
 
+import AppleTree_gongik.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,6 +18,7 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
 
+    private Integer centerNumber;
     private String username;
     private String password;
 
@@ -24,7 +26,4 @@ public class UserEntity {
     private UserRole userRole;
 
     private String encryptedPassword;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
-
 }
